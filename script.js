@@ -16,7 +16,7 @@ document.getElementById('heart').addEventListener('click', function() {
 
 // Add event listener for the second line of text
 document.getElementById('clickText').addEventListener('click', function() {
-    // Fade out the image and text
+    // Fade out the Spotify image and text container
     document.getElementById('spotifyImage').classList.add('fade-out');
     document.getElementById('textContainer').classList.add('fade-out');
 });
