@@ -69,13 +69,27 @@ body {
     }
 }
 
+/* Fade in animation */
+.fade-in {
+    animation: fadeIn 1s forwards; /* Duration for fade-in */
+}
+
+@keyframes fadeIn {
+     0% {
+        opacity: 0;
+        transform: scale(0.5); /* Optional: scale up */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* Final scale */
+    }
+}
+
 /* Spotify image styles */
 #spotifyImage {
     display: none; /* Initially hidden */
-    position: absolute; /* Position it absolutely */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust for centering */
+    position: relative; /* Position it relatively */
+    margin-top: 20px; /* Add some space above the image */
     border-radius: 12px; /* Optional: Rounded corners */
 }
 
@@ -83,7 +97,7 @@ body {
 #textContainer {
     text-align: center; /* Center the text */
     color: white; /* Set text color to white */
-    margin-top: 20px; /* Add some space above the text */
+    margin-top: 10px; /* Add some space above the text */
 }
 
 #textContainer p {
