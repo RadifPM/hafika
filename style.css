@@ -82,4 +82,10 @@ body {
 /* Text styles */
 #textContainer {
     text-align: center; /* Center the text */
-    color
+    color : white; /* Set text color to white */
+    margin-top: 20px; /* Add some space above the text */
+}
+
+#textContainer p {
+    margin: 5px 0; /* Add some margin between the lines of text */
+}
