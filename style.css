@@ -56,7 +56,7 @@ body {
 
 /* Fade out animation */
 .fade-out {
-    animation: fadeOut 0.5s forwards;
+    animation: fadeOut 1s forwards; /* Increased duration to 1s */
 }
 
 @keyframes fadeOut {
@@ -82,7 +82,7 @@ body {
 /* Text styles */
 #textContainer {
     text-align: center; /* Center the text */
-    color : white; /* Set text color to white */
+    color: white; /* Set text color to white */
     margin-top: 20px; /* Add some space above the text */
 }
 
