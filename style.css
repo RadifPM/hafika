@@ -89,8 +89,11 @@ body {
 #spotifyImage {
     display: none; /* Initially hidden */
     position: relative; /* Position it relatively */
+    margin: 0 auto; /* Center the image horizontally */
     margin-top: 20px; /* Add some space above the image */
     border-radius: 12px; /* Optional: Rounded corners */
+    width: 150px; /* Increase the width to make the image bigger */
+    height: auto; /* Maintain aspect ratio */
 }
 
 /* Text styles */
