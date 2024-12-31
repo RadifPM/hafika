@@ -6,7 +6,7 @@ body {
     align-items: center;
     justify-content: center;
     background: #0b1522;
-    flex-direction: column;
+    flex-direction: column; /* Stack elements vertically */
 }
 
 .heart {
@@ -17,7 +17,7 @@ body {
     transform: rotate(-45deg);
     box-shadow: -10px 10px 90px #f20044;
     animation: heart 0.6s linear infinite;
-    cursor: pointer;
+    cursor: pointer; /* Change cursor to pointer */
 }
 
 @keyframes heart {
@@ -56,50 +56,34 @@ body {
 
 /* Fade out animation */
 .fade-out {
-    animation: fadeOut 1s ease-in-out forwards; /* Durasi 1 detik dengan easing */
+    animation: fadeOut 0.5s forwards;
 }
 
 @keyframes fadeOut {
     0% {
         opacity: 1;
-        transform: scale(1);
     }
     100% {
         opacity: 0;
-        transform: scale(0.8); /* Skalakan sedikit lebih kecil */
-    }
-}
-
-/* Fade in animation */
-.fade-in {
-    animation: fadeIn 1s ease-in-out forwards; /* Durasi 1 detik dengan easing */
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: scale(0.8); /* Mulai dari sedikit lebih kecil */
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1); /* Skala normal */
+        transform: scale(0.5); /* Optional: scale down */
     }
 }
 
 /* Spotify image styles */
 #spotifyImage {
     display: none; /* Initially hidden */
-    position: relative; /* Position it relatively */
-    margin: 0 auto; /* Center the image */
-    margin-top: 20px; /* Add some space above the image */
+    position: absolute; /* Position it absolutely */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
     border-radius: 12px; /* Optional: Rounded corners */
 }
 
 /* Text styles */
 #textContainer {
     text-align: center; /* Center the text */
-    color: white; /* Set text color to white */
-    margin-top: 10px; /* Add some space above the text */
+    color : white; /* Set text color to white */
+    margin-top: 20px; /* Add some space above the text */
 }
 
 #textContainer p {

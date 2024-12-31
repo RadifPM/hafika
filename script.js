@@ -1,31 +1,16 @@
 document.getElementById('heart').addEventListener('click', function() {
     this.classList.add('fade-out');
     
-    // Tunggu animasi fade-out selesai sebelum mengganti elemen
+    // Wait for the fade-out animation to complete before showing the Spotify image and text
     setTimeout(function() {
-        const heart = document.getElementById('heart');
-        heart.style.display = 'none'; // Sembunyikan hati setelah fade out
-
-        const container = document.getElementById('container');
-        container.style.display = 'block'; // Tampilkan container
         document.getElementById('spotifyImage').style.display = 'block';
         document.getElementById('textContainer').style.display = 'block';
-        
-        // Tambahkan animasi fade-in
-        document.getElementById('spotifyImage').classList.add('fade-in');
-        document.getElementById('textContainer').classList.add('fade-in');
-    }, 1000); // Durasi fade-out
+    }, 500); // Match this duration with the fade-out animation duration
 });
 
-// Tambahkan event listener untuk teks
+// Add event listener for the second line of text
 document.getElementById('clickText').addEventListener('click', function() {
-    // Tambahkan animasi fade-out ke logo Spotify dan teks
+    // Fade out the image and text
     document.getElementById('spotifyImage').classList.add('fade-out');
     document.getElementById('textContainer').classList.add('fade-out');
-    
-    // Sembunyikan container setelah fade-out selesai
-    setTimeout(function() {
-        const container = document.getElementById('container');
-        container.style.display = 'none'; // Sembunyikan container setelah fade out
-    }, 1000); // Durasi fade-out
 });
