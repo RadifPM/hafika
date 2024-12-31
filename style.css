@@ -78,3 +78,8 @@ body {
     transform: translate(-50%, -50%); /* Adjust for centering */
     border-radius: 12px; /* Optional: Rounded corners */
 }
+
+/* Text styles */
+#textContainer {
+    text-align: center; /* Center the text */
+    color
