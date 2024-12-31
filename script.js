@@ -11,4 +11,18 @@ document.getElementById('heart').addEventListener('click', function() {
         // Trigger fade-in animations
         document.getElementById('spotifyImage').classList.add('fade-in');
         document.getElementById('textContainer').classList.add('fade-in');
-    }, 1000); // Match this duration with the fade
+    }, 1000); // Match this duration with the fade 
+});
+
+// Add event listener for the second line of text
+document.getElementById('clickText').addEventListener('click', function() {
+    // Fade out the Spotify image and text container
+    document.getElementById('spotifyImage').classList.add('fade-out');
+    document.getElementById('textContainer').classList.add('fade-out');
+    
+    // Optionally hide the container after fade out
+    setTimeout(function() {
+        const container = document.getElementById('container');
+        container.style.display = 'none'; // Hide the container after fade out
+    }, 1000); // Match this duration with the fade-out animation duration
+});
