@@ -11,7 +11,7 @@ document.getElementById('heart').addEventListener('click', function() {
         // Trigger fade-in animations
         document.getElementById('spotifyImage').classList.add('fade-in');
         document.getElementById('textContainer').classList.add('fade-in');
-    }, 1000); // Match this duration with the fade 
+    }, 1000); // Match this duration with the fade-out animation duration
 });
 
 // Add event listener for the second line of text
