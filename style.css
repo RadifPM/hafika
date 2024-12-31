@@ -68,24 +68,28 @@ body {
         transform: scale(0.5); /* Optional: scale down */
     }
 }
-
-/* Spotify image styles */
-#spotifyImage {
-    display: none; /* Initially hidden */
-    position: absolute; /* Position it absolutely */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust for centering */
-    border-radius: 12px; /* Optional: Rounded corners */
+#container {
+    display: flex;
+    flex-direction: column; /* Susun elemen secara vertikal */
+    align-items: center; /* Rata tengah secara horizontal */
+    justify-content: center; /* Rata tengah secara vertikal */
+    position: relative; /* Untuk memastikan elemen berada di dalam container */
+    margin-top: 20px; /* Tambahkan sedikit jarak atas untuk teks dan logo */
 }
 
-/* Text styles */
+#spotifyImage {
+    display: none; /* Awalnya disembunyikan */
+    width: 120px; /* Lebar gambar */
+    height: auto; /* Sesuaikan tinggi secara proporsional */
+    border-radius: 12px; /* Opsional: buat sudut gambar membulat */
+}
+
 #textContainer {
-    text-align: center; /* Center the text */
-    color : white; /* Set text color to white */
-    margin-top: 20px; /* Add some space above the text */
+    text-align: center; /* Rata tengah teks */
+    color: white; /* Warna teks putih */
+    margin-top: 15px; /* Beri jarak di bawah gambar Spotify */
 }
 
 #textContainer p {
-    margin: 5px 0; /* Add some margin between the lines of text */
+    margin: 5px 0; /* Tambahkan margin antar baris teks */
 }
