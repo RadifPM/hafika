@@ -69,14 +69,12 @@ body {
     }
 }
 
-/* Spotify iframe styles */
-#iframe {
+/* Spotify image styles */
+#spotifyImage {
     display: none; /* Initially hidden */
-    width: 25%; /* Set width to 25% of the screen */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 200px; /* Set a maximum height */
     position: absolute; /* Position it absolutely */
-    top: 20px; /* Add space from the top */
-    left: 20px; /* Add space from the left */
-    border-radius: 12px; /* Rounded corners */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    border-radius: 12px; /* Optional: Rounded corners */
 }
