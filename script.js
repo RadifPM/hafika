@@ -1,8 +1,11 @@
 document.getElementById('heart').addEventListener('click', function() {
     this.classList.add('fade-out');
     
-    // Wait for the fade-out animation to complete before showing the Spotify image and text
+    // Wait for the fade-out animation to complete before hiding the heart and showing the Spotify image and text
     setTimeout(function() {
+        const heart = document.getElementById('heart');
+        heart.style.display = 'none'; // Hide the heart after fade out
+
         const container = document.getElementById('container');
         container.style.display = 'block'; // Show the container
         document.getElementById('spotifyImage').style.display = 'block';
