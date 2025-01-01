@@ -10,8 +10,8 @@ body {
 }
 
 .heart {
-    height: 10vw; /* Use viewport width for responsiveness */
-    width: 10vw; /* Use viewport width for responsiveness */
+    height: 70px;
+    width: 70px;
     background: #f20044;
     position: relative;
     transform: rotate(-45deg);
@@ -35,8 +35,8 @@ body {
 .heart:before, .heart:after {
     content: '';
     position: absolute;
-    height: 10vw; /* Use viewport width for responsiveness */
-    width: 10vw; /* Use viewport width for responsiveness */
+    height: 70px;
+    width: 70px;
     background: #f20044;
     border-radius: 50px;
     box-shadow: -10px 10px 90px #f20044;
@@ -85,9 +85,18 @@ body {
     transform: scale(1.1);
 }
 
+#container {
+    display: flex;
+    flex-direction: column; /* Susun elemen secara vertikal */
+    align-items: center; /* Rata tengah secara horizontal */
+    justify-content: center; /* Rata tengah secara vertikal */
+    position: relative; /* Untuk memastikan elemen berada di dalam container */
+    margin-top: 20px; /* Tambahkan sedikit jarak atas untuk teks dan logo */
+}
+
 #spotifyImage {
     display: none; /* Awalnya disembunyikan */
-    width: 30vw; /* Use viewport width for responsiveness */
+    width: 120px; /* Lebar gambar */
     height: auto; /* Sesuaikan tinggi secara proporsional */
     border-radius: 12px; /* Opsional: buat sudut gambar membulat */
 }
@@ -102,39 +111,3 @@ body {
     margin: 5px 0; /* Tambahkan margin antar baris teks */
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 600px) {
-    .heart {
-        height: 15vw; /* Adjust size for smaller screens */
-        width: 15vw; /* Adjust size for smaller screens */
-    }
-
-    .heart:before, .heart:after {
-        height: 15vw; /* Adjust size for smaller screens */
-        width: 15vw; /* Adjust size for smaller screens */
-    }
-
-    #spotifyImage {
-        width: 80%; /* Make image responsive */
-    }
-
-    .response-box {
-        padding: 10px 20px; /* Adjust padding for smaller screens */
-    }
-}
-
-@media (min-width: 601px) and (max-width: 1200px) {
-    .heart {
-        height: 8vw; /* Adjust size for medium screens */
-        width: 8vw; /* Adjust size for medium screens */
-    }
-
-    .heart:before, .heart:after {
-        height: 8vw; /* Adjust size for medium screens */
-        width: 8vw; /* Adjust size for medium screens */
-    }
-
-    #spotifyImage {
-        width: 40vw; /* Make image responsive */
-    }
-}
