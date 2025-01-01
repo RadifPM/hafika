@@ -16,13 +16,14 @@ document.getElementById('clickText').addEventListener('click', function() {
     }, 500);
 });
 
-document.getElementById('yesBox').addEventListener('click', function() {
-    document.getElementById('responseContainer').classList.add('fade-out');
-    setTimeout(function() {
-        document.querySelector('.heart').style.display = 'block'; // Show heart again
-        document.querySelector('.heart').classList.remove ('fade-out');
-    }, 1000); // Match this duration with the fade-out animation duration
-});
+// Remove the event listener for the yesBox
+// document.getElementById('yesBox').addEventListener('click', function() {
+//     document.getElementById('responseContainer').classList.add('fade-out');
+//     setTimeout(function() {
+//         document.querySelector('.heart').style.display = 'block'; // Show heart again
+//         document.querySelector('.heart').classList.remove ('fade-out');
+//     }, 1000); // Match this duration with the fade-out animation duration
+// });
 
 document.getElementById('noBox').addEventListener('mouseover', function() {
     const randomX = Math.random() * (window.innerWidth - 100); // 100 is the width of the box
