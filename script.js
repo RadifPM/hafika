@@ -31,30 +31,3 @@ document.getElementById('noBox').addEventListener('mouseover', function() {
     this.style.left = randomX + 'px';
     this.style.top = randomY + 'px';
 });
-document.getElementById('yesBox').addEventListener('click', function () {
-    startHeartRain();
-});
-
-function startHeartRain() {
-    const body = document.body;
-    for (let i = 0; i < 30; i++) { // Jumlah hati yang akan turun
-        const heart = document.createElement('div');
-        heart.classList.add('heart-rain');
-
-        // Randomize posisi awal
-        const randomX = Math.random() * window.innerWidth;
-        const randomDelay = Math.random() * 2; // Random delay untuk animasi
-
-        // Tambahkan style untuk posisi dan delay
-        heart.style.left = randomX + 'px';
-        heart.style.animationDelay = randomDelay + 's';
-
-        // Tambahkan hati ke body
-        body.appendChild(heart);
-
-        // Hapus hati dari DOM setelah animasi selesai
-        setTimeout(() => {
-            heart.remove();
-        }, 3000); // Durasi animasi 3 detik
-    }
-}
